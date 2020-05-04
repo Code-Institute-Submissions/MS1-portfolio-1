@@ -1,11 +1,44 @@
-@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&family=Raleway:wght@300&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&family=Raleway:wght@300&display=swap");
 
-*{
-    margin: 0;
-    padding: 0;
-    border: 0;
+* {
+  margin: 0;
+  padding: 0;
+  border: 0;
 }
 
-body{ 
-    font-family: 'Open Sans',sans-serif;
+body {
+  font-family: "Open Sans", sans-serif;
+  color: #777777;
+}
+
+h2 {
+  letter-spacing: 2px;
+}
+
+#name {
+  float: none;
+}
+
+h3 {
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  color: #555555;
+}
+
+nav {
+  float: none;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+#menu {
+  font-size: 110%;
+  list-style-type: none;
+  letter-spacing: 4px;
+}
+
+#menu li {
+  float: none;
 }
