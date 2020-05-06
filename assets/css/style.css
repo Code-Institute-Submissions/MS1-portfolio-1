@@ -9,6 +9,8 @@
 body {
   font-family: "Open Sans", sans-serif;
   color: #777777;
+  background-image: url("../../assets/images/bg-image.jpg");
+  background-color: #fff;
 }
 
 
@@ -55,4 +57,21 @@ h3 {
 
 .active{
     border-bottom: 1px solid #777777;
+}
+
+#profile-text{
+    font-size: 130%;
+    letter-spacing: normal;
+
+    width: 400px;
+    height: 500px;
+
+    padding-top: 40px;
+    padding-left: 10px;
+
+    background-color: grey;
+
+  
+
+
 }
