@@ -9,27 +9,33 @@
 body {
   font-family: "Open Sans", sans-serif;
   color: #777777;
-  background-image: url("../../assets/images/bg-image.jpg");
+  background-image: url("../../assets/images/bg-img.jpg") ;
   background-color: #fff;
 }
 
 
 /*--------------------------------------------------------Container */
 
-
+.logo {
+    margin:0;
+    display: inline;
+    padding: 10px;
+    text-align: center;
+    align-items: center;
+  justify-content: center
+}
 
 h2 {
   letter-spacing: 2px;
-}
-
-#name {
-  float: none;
+  text-align: center;
 }
 
 h3 {
   text-transform: uppercase;
   letter-spacing: 2px;
   color: #555555;
+  text-align: center;
+  padding-top: 10px;
 }
 
 
@@ -38,17 +44,20 @@ h3 {
   font-size: 110%;
   list-style-type: none;
   letter-spacing: 4px;
-  line-height: 75px;
+  line-height: 55px;
+  text-align: center;
+  margin-top: 55px;
 }
 
 #menu li {
-  float: none;
+  display: inline;
 }
 
 #menu a{
     text-decoration: none;
     color:inherit;
-
+    display:inline-block;
+    padding: 5px;
 }
 
 #menu a:hover{
@@ -59,19 +68,39 @@ h3 {
     border-bottom: 1px solid #777777;
 }
 
+#circle-container{
+    width: 300px;
+    height: 300px;
+    padding: 30px;
+    border-style: solid;
+    border-width: 1px;
+    border-radius: 50%;
+    margin: 0 auto;
+}
+
+#circle-cover-bg{
+    background: url("../../assets/images/profile-img-test.png") no-repeat center center;
+    height: 100%;
+    border-radius: 50%;
+}
+
+
 #profile-text{
     font-size: 130%;
     letter-spacing: normal;
+    text-align: center;
 
-    width: 400px;
-    height: 500px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 50px;
+
+    width: 800px;
+    height: 250px;
 
     padding-top: 40px;
     padding-left: 10px;
+    padding-right: 10px;
 
-    background-color: grey;
-
-  
-
+    background-color: #9da6aebe;
 
 }
