@@ -1,4 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&family=Raleway:wght@300&display=swap");
+@media(min-width:768px){}
+
 
 * {
   margin: 0;
@@ -29,7 +31,7 @@ body {
   letter-spacing: 4px;
   line-height: 55px;
   text-align: center;
-  margin-top: 25px;
+ 
   position: fixed;
   z-index: 1;
   display: flex;
@@ -57,6 +59,7 @@ body {
 
 .menu ul li a:hover {
   border-bottom: 1px solid #777777;
+  color: #40454b
 }
 
 .active {
@@ -76,6 +79,9 @@ section {
 
 section#home {
     background-image: url("../../assets/images/bg-img.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
 }
 
 section#about {
@@ -87,9 +93,9 @@ section#contact {
 }
 
 
+
 .logo {
-  margin: 0;
-  display: inline;
+  margin-top: 55px;
   padding: 10px;
   text-align: center;
   align-items: center;
@@ -103,7 +109,7 @@ h2 {
 
 h3 {
   text-transform: uppercase;
-  letter-spacing: 2px;
+  letter-spacing: 3px;
   color: #555555;
   text-align: center;
   padding-top: 10px;
@@ -111,13 +117,14 @@ h3 {
 
 
 #circle-container {
-  width: 300px;
-  height: 300px;
-  padding: 30px;
+  width: 280px;
+  height: 280px;
+  padding: 25px;
   border-style: solid;
   border-width: 1px;
   border-radius: 50%;
   margin: 0 auto;
+  margin-top: 15px;
 }
 
 #circle-cover-bg {
@@ -144,4 +151,8 @@ h3 {
   padding-right: 10px;
 
   background-color: #9da6aebe;
+
+   transition: all .5s ease-in-out;
+  -moz-transition: all .5s ease-in-out;
+  -webkit-transition: all .5s ease-in-out;
 }
