@@ -155,16 +155,24 @@ h3 {
 
 /*------------------------------------------------------------------- Progressbars --------------*/
 
-.skills-container{
-position: relative;
-display: flex;
-justify-content: space-around;
+.skills-container {
+  position: relative;
+  display: flex;
+  justify-content: space-around;
 }
 
-.skills-container .card{
-    position: relative;
-    width: 200px;
-    background: linear-gradient()
+.skills-container .card {
+  position: relative;
+  width: 200px;
+  background: linear-gradient(0deg, #777777, #555555, #777777);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 300px;
+  border-radius: 4px;
+  text-align: center;
+  overflow: hidden;
+  transition: 0.5s;
 }
 
 .box {
@@ -208,7 +216,49 @@ justify-content: space-around;
 }
 
 .box .percent svg circle:nth-child(2) {
+  stroke-dasharray: 440;
+  stroke-dashoffset: 440;
+  stroke: yellow;
+  opacity: 1;
+  animation: animate-circle 2s cubic-bezier(0, 0.23, 1, 0.1);
+}
+
+.card:nth-child(1) .box .percent svg circle:nth-child(2) {
   stroke-dashoffset: calc(440 - (440 * 70) / 100);
+  stroke: yellow;
+  opacity: 1;
+  animation: animate-circle 2s cubic-bezier(0, 0.23, 1, 0.1);
+}
+
+.card:nth-child(2) .box .percent svg circle:nth-child(2) {
+  stroke-dashoffset: calc(440 - (440 * 50) / 100);
+  stroke: yellow;
+  opacity: 1;
+  animation: animate-circle 2s cubic-bezier(0, 0.23, 1, 0.1);
+}
+.card:nth-child(3) .box .percent svg circle:nth-child(2) {
+  stroke-dashoffset: calc(440 - (440 * 40) / 100);
+  stroke: yellow;
+  opacity: 1;
+  animation: animate-circle 2s cubic-bezier(0, 0.23, 1, 0.1);
+}
+
+.card:nth-child(4) .box .percent svg circle:nth-child(2) {
+  stroke-dashoffset: calc(440 - (440 * 60) / 100);
+  stroke: yellow;
+  opacity: 1;
+  animation: animate-circle 2s cubic-bezier(0, 0.23, 1, 0.1);
+}
+
+.card:nth-child(5) .box .percent svg circle:nth-child(2) {
+  stroke-dashoffset: calc(440 - (440 * 70) / 100);
+  stroke: yellow;
+  opacity: 1;
+  animation: animate-circle 2s cubic-bezier(0, 0.23, 1, 0.1);
+}
+
+.card:nth-child(6) .box .percent svg circle:nth-child(2) {
+  stroke-dashoffset: calc(440 - (440 * 50) / 100);
   stroke: yellow;
   opacity: 1;
   animation: animate-circle 2s cubic-bezier(0, 0.23, 1, 0.1);
@@ -239,6 +289,7 @@ justify-content: space-around;
   color: #999;
   font-weight: 700;
   margin-top: 20px;
+  text-transform: uppercase;
 }
 
 @keyframes animate-circle {
