@@ -1,6 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&family=Raleway:wght@300&display=swap");
-@media (min-width: 768px) {
-}
+
 
 * {
   margin: 0;
@@ -32,7 +31,7 @@ body {
   letter-spacing: 4px;
   line-height: 55px;
   text-align: center;
-
+background-color: white;
   position: fixed;
   z-index: 1000;
   display: flex;
@@ -67,23 +66,23 @@ body {
   border-bottom: 1px solid #777777;
 }
 
-section {
+.content-wrapper {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   text-align: center;
   width: 100%;
-  height: 100vh;
+  padding-top: 5rem;
   scroll-snap-align: center;
 }
 
-section#home {
+#home {
   position: relative;
   z-index: 1;
 }
 
-section#home::before {
+#home::before {
   content: "";
   position: absolute;
   top: 0;
@@ -169,12 +168,12 @@ h3 {
 }
 
 /*------------------------------------------------------------------- Skills --------------------*/
-section.bg-skills {
+.content-wrapper.bg-skills {
   position: relative;
   z-index: 1;
 }
 
-section.bg-skills::before {
+.content-wrapper.bg-skills::before {
   content: "";
   position: absolute;
   top: 0;
@@ -275,12 +274,12 @@ div.radialProgressBar .overlay {
 }
 /*------------------------------------------------------------------- Contact Form --------------*/
 
-section.bg-contact {
+.content-wrapper.bg-contact {
   position: relative;
   z-index: 1;
 }
 
-section.bg-contact::before {
+.content-wrapper.bg-contact::before {
   content: "";
   position: absolute;
   top: 0;
@@ -387,11 +386,28 @@ p.download-text {
 
 /*------------------------------------------------------------------- Media Queries --------------*/
 
-@media (min-width: 992px) {
+@media screen and (max-width:1393px){
+
+#home{
+    width: 50%;
+    height: 1200px;
+    margin: 0 auto;
+}
+
+#about{
+    
+}
+
+
+
+
+(min-width: 992px) {
   .center-form {
     padding-top: 30px;
     min-height: 240px;
     max-width: 50%;
     margin: 0 auto;
   }
+}
+
 }
