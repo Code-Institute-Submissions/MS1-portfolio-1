@@ -38,7 +38,7 @@
     </header>
     <! --*****************************************PROFILE**********************************-->
 
-    <section id="home">
+    <section id="home" class="profile-container">
       <div class="logo;">
         <h2 id="name">Jing Xu</h2>
         <h4>Full Stack Software Developer</h4>
@@ -60,7 +60,7 @@
       </div>
     </section>
 
-    <section id="about">
+    <section id="about" class="skills bg-skills">
       <div>
         <p>
           Experience---- Lorem Ipsum is simply dummy text of the printing and
@@ -73,156 +73,138 @@
       </div>
       <! --*****************************************PROGRESS BAR**********************************-->
       <div class="skills-container">
-        <div class="card">
-          <div class="box">
-            <div class="percent">
-              <svg>
-                <circle cx="70" cy="70" r="70"></circle>
-                <circle cx="70" cy="70" r="70"></circle>
-              </svg>
-              <div class="number">
-                <h2>70<span>%</span></h2>
-              </div>
-            </div>
-            <h2 class="text">HTML</h2>
-          </div>
+        <div class="radialProgressBar progress-60">
+          <div class="overlay">60</div>
         </div>
-        <div class="card">
-          <div class="box">
-            <div class="percent">
-              <svg>
-                <circle cx="70" cy="70" r="70"></circle>
-                <circle cx="70" cy="70" r="70"></circle>
-              </svg>
-              <div class="number">
-                <h2>60<span>%</span></h2>
-              </div>
-            </div>
-            <h2 class="text">CSS</h2>
-          </div>
+        <div class="radialProgressBar progress-60">
+          <div class="overlay">60</div>
         </div>
-        <div class="card">
-          <div class="box">
-            <div class="percent">
-              <svg>
-                <circle cx="70" cy="70" r="70"></circle>
-                <circle cx="70" cy="70" r="70"></circle>
-              </svg>
-              <div class="number">
-                <h2>60<span>%</span></h2>
-              </div>
-            </div>
-            <h2 class="text">js</h2>
-          </div>
+        <div class="radialProgressBar progress-60">
+          <div class="overlay">60</div>
         </div>
-        <div class="card">
-          <div class="box">
-            <div class="percent">
-              <svg>
-                <circle cx="70" cy="70" r="70"></circle>
-                <circle cx="70" cy="70" r="70"></circle>
-              </svg>
-              <div class="number">
-                <h2>60<span>%</span></h2>
-              </div>
-            </div>
-            <h2 class="text">py</h2>
-          </div>
+        <div class="radialProgressBar progress-60">
+          <div class="overlay">60</div>
         </div>
-        <div class="card">
-          <div class="box">
-            <div class="percent">
-              <svg>
-                <circle cx="70" cy="70" r="70"></circle>
-                <circle cx="70" cy="70" r="70"></circle>
-              </svg>
-              <div class="number">
-                <h2>60<span>%</span></h2>
-              </div>
-            </div>
-            <h2 class="text">sql</h2>
-          </div>
+        <div class="radialProgressBar progress-60">
+          <div class="overlay">60</div>
         </div>
-        <div class="card">
-          <div class="box">
-            <div class="percent">
-              <svg>
-                <circle cx="70" cy="70" r="70"></circle>
-                <circle cx="70" cy="70" r="70"></circle>
-              </svg>
-              <div class="number">
-                <h2>60<span>%</span></h2>
-              </div>
-            </div>
-            <h2 class="text">django</h2>
-          </div>
+        <div class="radialProgressBar progress-60">
+          <div class="overlay">60</div>
+        </div>
+      </div>
+      <div class="col-md-8 section-column">
+        <div class="timeline-item" data-tates="09/2007-06/2010">
+          <h4>Shanghai Publishing and Printing College</h4>
+          <p>Diploma in Publishing</p>
+        </div>
+        <div class="timeline-item" data-tates="09/2010-07/2011">
+          <h4>University of Central Lancashire</h4>
+          <p>BA(Hons)International Corporate Communication[2:1]</p>
+        </div>
+        <div class="timeline-item" data-tates="09/2011-06/2012">
+          <h4>University of Exeter</h4>
+          <p>MSc International Management</p>
+        </div>
+        <div class="timeline-item" data-tates="09/2012-05/2013">
+          <h4>volunteer in Chinese Overseas Christian Mission</h4>
+        </div>
+        <div class="timeline-item" data-tates="05/2013-10/2013">
+          <h4>Bego Ltd.(Start-up)</h4>
+          <p>Marketing Executive</p>
+        </div>
+        <div class="timeline-item" data-tates="01/2014-04/2014">
+          <h4>UVIC Ltd.</h4>
+          <p>Education Marketing Officer</p>
+        </div>
+        <div class="timeline-item" data-tates="04/2014-Present">
+          <h4>UKEduVision Ltd.</h4>
+          <p>Education Consultant</p>
         </div>
       </div>
     </section>
-    <! --***************************************** CONTACT FORM **********************************-->
-    <section id="contact" class="container-fluid">
-      <div class="row bg-contact">
-        <div class="col">
-          <h3 class="text-center contact-heading">Get in touch!</h3>
-          <div class="center-form">
-            <form action="">
-              <input
-                type="text"
-                name="name"
-                id="fullname"
-                class="form-control"
-                placeholder="Name"
-                required
-              />
-              <input
-                type="email"
-                name="email"
-                id="emailaddress"
-                class="form-control"
-                placeholder="Email"
-                required
-              />
-              <input
-                type="text"
-                name="subject"
-                id="subject"
-                class="form-control"
-                placeholder="Subject"
-                required
-              />
-              <textarea
-                name="message"
-                id="message"
-                rows="5"
-                placeholder="Message"
-                required
-              ></textarea>
-              <div class="form-row text-center">
-                <div class="col">
-                  <button type="submit" class="btn btn-secondary">Send</button>
+    <! --***************************************** CONTACT *****************************************-->
+    <section id="contact" class="container-fluid bg-contact">
+      <div class="row">
+        <div class="contact-form transbox">
+          <div>
+            <h3 class="text-center contact-heading">Get in touch</h3>
+            <div>
+              <form action="" method="">
+                <input
+                  type="text"
+                  name="name"
+                  id="fullname"
+                  class="form-control form-item"
+                  placeholder="Name"
+                  required
+                />
+                <input
+                  type="email"
+                  name="email"
+                  id="emailaddress"
+                  class="form-control form-item"
+                  placeholder="Email"
+                  required
+                />
+                <input
+                  type="text"
+                  name="subject"
+                  id="subject"
+                  class="form-control form-item"
+                  placeholder="Subject"
+                  required
+                />
+                <textarea
+                  class="form-control form-item"
+                  name="message"
+                  id="message"
+                  rows="5"
+                  placeholder="Message"
+                  required
+                ></textarea>
+                <div class="form-row text-center">
+                  <div class="col">
+                    <button type="submit" class="btn btn-secondary">
+                      Send
+                    </button>
+                  </div>
                 </div>
-              </div>
-            </form>
+              </form>
+            </div>
           </div>
         </div>
+        <div class="col-md-8">
+          <p>
+            Download My CV
+            <a href="#" target="_blank" class="cv-pdf">
+              <i class="fa fa-arrow-circle-o-down" aria-hidden="true"></i>
+            </a>
+          </p>
+        </div>
+
       </div>
     </section>
+    <! --***************************************** FOOTER *****************************************-->
     <footer class="container-fluid">
-      <div>
-        <p>2020 by Jing Xu All Rights reserved</p>
-      </div>
-      <div>
-        <p>
-          download my cv
-          <a href="#" target="_blank" class="cv-pdf">
-            <i class="fa fa-arrow-circle-o-down" aria-hidden="true"></i>
-          </a>
-        </p>
-      </div>
-      <div>
-        <a href="https://www.linkedin.com/in/jingxu274/" target="_blank">
-          <i class="fa fa-linkedin-square" aria-hidden="true"></i>
-        </a>
+      <div class="row">
+        <div class="col-sm-4">
+          <p class="inline-block">2020 by Jing Xu All Rights Reserved</p>
+        </div>
+        
+        <div class="col-sm-4">
+          <ul class="list-inline social-links">
+            <li class="list-inline-item">
+              <a href="https://www.linkedin.com/in/jingxu274/" target="_blank">
+                <i class="fa fa-linkedin-square" aria-hidden="true"></i>
+              </a>
+            </li>
+            <li class="list-inline-item">
+              <a href="https://github.com/sunshine274" target="_blank">
+                <i class="fa fa-github" aria-hidden="true"></i>
+              </a>
+            </li>
+          </ul>
+        </div>
       </div>
     </footer>
   </body>

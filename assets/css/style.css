@@ -25,14 +25,16 @@ body {
 /*------------------------------------------------------------------- Navbar --------------*/
 
 .menu {
-  font-size: 110%;
+  font-size: 120%;
+  color: #9bbcb3;
+  font-weight: bold;
   list-style-type: none;
   letter-spacing: 4px;
   line-height: 55px;
   text-align: center;
 
   position: fixed;
-  z-index: 1;
+  z-index: 1000;
   display: flex;
   width: 100%;
   height: 80px;
@@ -89,6 +91,10 @@ section#about {
 
 section#contact {
   background: white cover;
+}
+
+.profile-container {
+  background-color: rgba(60, 60, 60, 0.6);
 }
 
 .logo {
@@ -153,186 +159,231 @@ h3 {
   -webkit-transition: all 0.5s ease-in-out;
 }
 
-/*------------------------------------------------------------------- Progressbars --------------*/
-
-.skills-container {
+/*------------------------------------------------------------------- Skills --------------------*/
+section.bg-skills {
   position: relative;
-  display: flex;
-  justify-content: space-around;
+  z-index: 1;
 }
 
-.skills-container .card {
-  position: relative;
-  width: 200px;
-  background: linear-gradient(0deg, #777777, #555555, #777777);
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 300px;
-  border-radius: 4px;
-  text-align: center;
-  overflow: hidden;
-  transition: 0.5s;
-}
-
-.box {
-  position: relative;
-  width: 300px;
-  height: 400px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-  background: #fff;
-  box-shadow: 0 30px 60px rgba(0, 0, 0, 0.2);
-}
-
-.box .percent {
-  position: relative;
-  width: 150px;
-  height: 150px;
-}
-
-.box .percent svg {
-  position: relative;
-  width: 150px;
-  height: 150px;
-}
-
-.box .percent svg circle {
-  width: 150px;
-  height: 150px;
-  fill: none;
-  stroke-width: 10;
-  stroke: #000;
-  transform: translate(5px, 5px);
-  stroke-dasharray: 440;
-  stroke-dashoffset: 440;
-}
-
-.box .percent svg circle:nth-child(1) {
-  stroke-dashoffset: 0;
-  stroke: #f3f3f3;
-}
-
-.box .percent svg circle:nth-child(2) {
-  stroke-dasharray: 440;
-  stroke-dashoffset: 440;
-  stroke: yellow;
-  opacity: 1;
-  animation: animate-circle 2s cubic-bezier(0, 0.23, 1, 0.1);
-}
-
-.card:nth-child(1) .box .percent svg circle:nth-child(2) {
-  stroke-dashoffset: calc(440 - (440 * 70) / 100);
-  stroke: yellow;
-  opacity: 1;
-  animation: animate-circle 2s cubic-bezier(0, 0.23, 1, 0.1);
-}
-
-.card:nth-child(2) .box .percent svg circle:nth-child(2) {
-  stroke-dashoffset: calc(440 - (440 * 50) / 100);
-  stroke: yellow;
-  opacity: 1;
-  animation: animate-circle 2s cubic-bezier(0, 0.23, 1, 0.1);
-}
-.card:nth-child(3) .box .percent svg circle:nth-child(2) {
-  stroke-dashoffset: calc(440 - (440 * 40) / 100);
-  stroke: yellow;
-  opacity: 1;
-  animation: animate-circle 2s cubic-bezier(0, 0.23, 1, 0.1);
-}
-
-.card:nth-child(4) .box .percent svg circle:nth-child(2) {
-  stroke-dashoffset: calc(440 - (440 * 60) / 100);
-  stroke: yellow;
-  opacity: 1;
-  animation: animate-circle 2s cubic-bezier(0, 0.23, 1, 0.1);
-}
-
-.card:nth-child(5) .box .percent svg circle:nth-child(2) {
-  stroke-dashoffset: calc(440 - (440 * 70) / 100);
-  stroke: yellow;
-  opacity: 1;
-  animation: animate-circle 2s cubic-bezier(0, 0.23, 1, 0.1);
-}
-
-.card:nth-child(6) .box .percent svg circle:nth-child(2) {
-  stroke-dashoffset: calc(440 - (440 * 50) / 100);
-  stroke: yellow;
-  opacity: 1;
-  animation: animate-circle 2s cubic-bezier(0, 0.23, 1, 0.1);
-}
-
-.box .percent .number {
+section.bg-skills::before {
+  content: "";
   position: absolute;
   top: 0;
   left: 0;
+  bottom: 0;
+  right: 0;
   width: 100%;
   height: 100%;
+  margin: 0;
+  background-image: url("../../assets/images/bg-about.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  border: none;
+  opacity: 0.3;
+  z-index: -1;
+}
+
+
+/*------------------------------------------------------------------- Progressbars --------------*/
+div.skill-container {
+  margin: 0 auto;
+  padding-left: 12px;
+  padding-right: 12px;
+  display: inline;
+}
+
+div.radialProgressBar {
+  border-radius: 50%;
+  -webkit-transform: translate(50%, 50%);
+  transform: translate(50%, 50%);
+  width: 100px;
+  height: 100px;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: center;
-  align-items: center;
-  color: #999;
+  background: #ddd;
+  margin: 20px;
 }
 
-.box .percent .number h2 {
-  font-size: 48px;
+div.radialProgressBar .overlay {
+  border-radius: 50%;
+  width: 80px;
+  height: 80px;
+  margin: auto;
+  background: #fff;
+  text-align: center;
+  padding-top: 30%;
 }
 
-.box .percent .number h2 span {
-  font-size: 24px;
+.radialProgressBar.progress-60 {
+  background-image: -webkit-linear-gradient(left, #9bbcb9 50%, transparent 50%),
+    -webkit-linear-gradient(36deg, #9bbcb9 50%, #ddd 50%);
+  background-image: linear-gradient(90deg, #9bbcb9 50%, transparent 50%),
+    linear-gradient(54deg, #9bbcb9 50%, #ddd 50%);
+}
+/*------------------------------------------------------------------- Timeline --------------*/
+
+.timeline-item {
+  padding: 4em 2em 0em 2em;
+  position: relative;
+  color: #fafafa;
+  border-left: 1px solid;
 }
 
-.box .text {
-  padding: 10px 0 0;
-  color: #999;
-  font-weight: 700;
-  margin-top: 20px;
-  text-transform: uppercase;
+.timeline-item p {
+  padding: 0;
+  margin: 0;
 }
 
-@keyframes animate-circle {
-  30% {
-    opacity: 0.3;
-    stroke-dashoffset: 350;
-  }
-  50% {
-    opacity: 0.5;
-    stroke-dashoffset: 150;
-  }
-  100% {
-    opacity: 1;
-  }
+.timeline-item::before {
+  content: attr(data-dates);
+  position: absolute;
+  left: 2.5em;
+  top: 3em;
+  display: block;
+  font-size: 0.8em;
+  padding: 0;
+  margin: 0;
 }
 
+.timeline-item::after {
+  width: 12px;
+  height: 12px;
+  display: block;
+  top: 2.4em;
+  position: absolute;
+  left: -6px;
+  border-radius: 12px;
+  content: "";
+  background: #fafafa;
+}
+
+.history-items {
+  margin-bottom: 30px;
+}
 /*------------------------------------------------------------------- Contact Form --------------*/
 
+section.bg-contact {
+  position: relative;
+  z-index: 1;
+}
+
+section.bg-contact::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  background-image: url("../../assets/images/bg-contact.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  border: none;
+  opacity: 0.4;
+  z-index: -1;
+}
+
+.contact-form {
+  margin-top: 150px;
+  color: #fff;
+  background-color: rgba(60, 60, 60, 0.6);
+  max-width: 400px;
+  position: relative;
+  left: 10%;
+  padding: 30px;
+}
+
 .contact-heading {
-    font-weight: 300;
-    margin-top: 25px;
-    margin-bottom: 25px;
+  font-weight: 300;
+  margin-top: 25px;
+  margin-bottom: 25px;
+  color: white;
 }
 
-.center-form {
-    padding-top: 10px;
-    margin: 0 auto;
-    max-width: 70%;
+.form-item {
+  margin-top: 10px;
 }
 
-button[type="submit"]{
-    margin-top: 15px;
-    margin-bottom: 20px;
-    background-color: teal;
+.form-item:hover {
+  border-color: #6db9d9;
 }
 
+button[type="submit"] {
+  margin-top: 15px;
+  margin-bottom: 20px;
+  background-color: #9bbcb3;
+}
+
+
+/*------------------------------------------------------------------- Footer ---------------------*/
+
+footer {
+    background-color: #9bbcb3;
+    color: #fafafa;
+    min-height: 120px;
+    margin: 0;
+    text-align: center;
+    padding-top: 20px;
+}
+
+p.download-text{
+    font-size: 20px;
+}
+
+.cv-pdf i {
+    font-size: 18px;
+    color: #fafafa;
+    text-align: center;
+    padding-left: 5px;
+    transition: all 0.35s ease-in-out;
+    -moz-transition: all 0.35s ease-in-out;
+    -webkit-transition: all 0.35s ease-in-out;
+    -o-transition: all 0.35s ease-in-out;
+}
+
+.cv-pdf i:hover{
+    color: #6db9d9;
+}
+
+.socil-links{
+    padding-bottom: 15px;
+}
+
+.social-links li a i {
+    width: 32px;
+    height: 32px;
+    padding: 12px 0;
+    border-radius: 50%;
+    font-size: 13px;
+    line-height: 15px;
+    text-align: center;
+    color: #fafafa;
+    background: #8f8f8f;
+    transition: all 0.35s ease-in-out;
+    -moz-transition: all 0.35s ease-in-out;
+    -webkit-transition: all 0.35s ease-in-out;
+    -o-transition: all 0.35s ease-in-out;
+}
+
+.social-links li a i:hover {
+    background: #6db9d9;
+}
+
+#footer-details {
+    padding: 20px;
+}
 /*------------------------------------------------------------------- Media Queries --------------*/
 
-@media(min-width:992px) {
-    .center-form {
+@media (min-width: 992px) {
+  .center-form {
     padding-top: 30px;
     min-height: 240px;
     max-width: 50%;
     margin: 0 auto;
-}
+  }
 }
