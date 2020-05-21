@@ -9,6 +9,7 @@ In this project I mainly reviewed the knowledge and skills I learned in **HTML/C
 ## bootstrap
 ## W3schools.com
 ## Traversy Media youtube tutorial
+##hover.css
 
 
 
@@ -18,3 +19,5 @@ In this project I mainly reviewed the knowledge and skills I learned in **HTML/C
 
 ### about Image by <a href="https://pixabay.com/users/LUM3N-1066559/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=1949192">LUM3N</a> from <a href="https://pixabay.com/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=1949192">Pixabay</a>
 
+
+westminster bridge photo by Dominika Gregušová from Pexels

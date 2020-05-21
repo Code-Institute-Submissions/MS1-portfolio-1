@@ -1,6 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&family=Raleway:wght@300&display=swap");
 
-
 * {
   margin: 0;
   padding: 0;
@@ -31,12 +30,12 @@ body {
   letter-spacing: 4px;
   line-height: 55px;
   text-align: center;
-background-color: white;
+  background-color: white;
   position: fixed;
   z-index: 1000;
   display: flex;
   width: 100%;
-  height: 80px;
+  height: 40px;
 }
 
 .menu ul {
@@ -106,19 +105,20 @@ background-color: white;
 }
 
 .logo {
-  margin-top: 55px;
+  margin-top: 70px;
   padding: 10px;
   text-align: center;
   align-items: center;
   justify-content: center;
 }
 
-h2 {
+text-title {
   letter-spacing: 2px;
   text-align: center;
+  font-size: 700;
 }
 
-h3 {
+text-paragraph {
   text-transform: uppercase;
   letter-spacing: 3px;
   color: #555555;
@@ -152,6 +152,7 @@ h3 {
   margin-left: auto;
   margin-right: auto;
   margin-top: 50px;
+  margin-bottom: 20px;
 
   width: 800px;
   height: 250px;
@@ -159,6 +160,7 @@ h3 {
   padding-top: 40px;
   padding-left: 10px;
   padding-right: 10px;
+  padding-bottom: 10px;
 
   background-color: #9da6aebe;
 
@@ -196,11 +198,14 @@ h3 {
 div.skills-container {
   margin: 0 auto;
   padding-left: 12px;
-  padding-right: 12px;
+  padding-right: 50px;
+  align-items: center;
+  justify-content: center;
 }
 
 .cirle-align {
   display: inline-table;
+  justify-content: right;
 }
 
 div.radialProgressBar {
@@ -241,7 +246,7 @@ div.radialProgressBar .overlay {
 }
 
 .timeline-item p {
-    font-weight: 700;
+  font-weight: 700;
   padding: 0;
   margin: 0;
 }
@@ -252,7 +257,7 @@ div.radialProgressBar .overlay {
   left: 2.5em;
   top: 3em;
   display: block;
-  font-size: 0.8em;
+  font-size: 1em;
   padding: 0;
   margin: 0;
 }
@@ -277,6 +282,8 @@ div.radialProgressBar .overlay {
 .content-wrapper.bg-contact {
   position: relative;
   z-index: 1;
+  justify-content: center;
+  display: block;
 }
 
 .content-wrapper.bg-contact::before {
@@ -299,14 +306,15 @@ div.radialProgressBar .overlay {
 }
 
 .contact-form {
-  margin-top: 150px;
+  margin-top: 90px;
   color: #fff;
   background-color: rgba(60, 60, 60, 0.6);
   max-width: 400px;
   position: relative;
-  left: 10%;
+ align-content: center;
   padding: 30px;
-  float: left;
+  left: 20%;
+  bottom: 
 }
 
 .contact-heading {
@@ -328,25 +336,21 @@ button[type="submit"] {
   margin-top: 15px;
   margin-bottom: 20px;
   background-color: #9bbcb3;
+  border-style: none;
 }
 
-/*------------------------------------------------------------------- Footer ---------------------*/
-
-footer {
-  background-color: #9bbcb3;
+#download-text {
+  font-size: 30px;
+  align-content: center;
   color: #fafafa;
-  min-height: 120px;
-  margin: 0;
-  text-align: center;
-  padding-top: 20px;
 }
 
-p.download-text {
-  font-size: 20px;
+#download-text:hover {
+  color: #6db9d9;
 }
 
 .cv-pdf i {
-  font-size: 18px;
+  font-size: 35px;
   color: #fafafa;
   text-align: center;
   padding-left: 5px;
@@ -358,6 +362,17 @@ p.download-text {
 
 .cv-pdf i:hover {
   color: #6db9d9;
+}
+
+/*------------------------------------------------------------------- Footer ---------------------*/
+
+footer {
+  background-color: #9bbcb3;
+  color: #fafafa;
+  min-height: 120px;
+  margin: 0;
+  text-align: center;
+  padding-top: 20px;
 }
 
 .socil-links {
@@ -386,28 +401,22 @@ p.download-text {
 
 /*------------------------------------------------------------------- Media Queries --------------*/
 
-@media screen and (max-width:1393px){
-
-#home{
+@media screen and (max-width: 1393px) {
+  #home {
     width: 50%;
     height: 1200px;
     margin: 0 auto;
-}
-
-#about{
-    
-}
-
-
-
-
-(min-width: 992px) {
-  .center-form {
-    padding-top: 30px;
-    min-height: 240px;
-    max-width: 50%;
-    margin: 0 auto;
   }
-}
 
+  #about {
+  }
+
+  (min-width: 992px) {
+    .center-form {
+      padding-top: 30px;
+      min-height: 240px;
+      max-width: 50%;
+      margin: 0 auto;
+    }
+  }
 }

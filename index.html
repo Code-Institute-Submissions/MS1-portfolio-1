@@ -36,19 +36,19 @@
         </nav>
       </div>
     </header>
-    <! --*****************************************PROFILE**********************************-->
+    <!--*****************************************PROFILE**********************************-->
 
     <section id="home" class="profile-container content-wrapper">
       <div class="logo;">
-        <h2 id="name">Jing Xu</h2>
-        <h4>Full Stack Software Developer</h4>
+        <h2 id="name" class="profile-text">Jing Xu</h2>
+        <h4 class="profile-text">Full Stack Software Developer</h4>
       </div>
       <div id="profile-pic">
         <div id="circle-container">
           <div id="circle-cover-bg"></div>
         </div>
       </div>
-      <div id="profile-text">
+      <div id="profile-text" class="col-md-8 col-sm-3">
         <p>
           Short Bio- Full Stack Web Developer Lorem Ipsum is simply dummy text
           of the printing and typesetting industry. Lorem Ipsum has been the
@@ -61,67 +61,70 @@
     </section>
 
     <section id="about" class="skills bg-skills content-wrapper">
-    <div class="row">
-      <! --*****************************************PROGRESS BAR**********************************-->
-      <div class="col skills-container">
-        <div class="cirle-align radialProgressBar progress-60">
-          <div class="overlay">HTML</div>
+      <div class="row">
+        <!--*****************************************PROGRESS BAR**********************************-->
+        <div class="col-md-4 skills-container">
+          <div class="cirle-align radialProgressBar progress-60">
+            <div class="overlay">HTML</div>
+          </div>
+          <div class="cirle-align radialProgressBar progress-60">
+            <div class="overlay">CSS</div>
+          </div>
+          <div class="cirle-align radialProgressBar progress-60">
+            <div class="overlay">JS</div>
+          </div>
+          <div class="cirle-align radialProgressBar progress-60">
+            <div class="overlay">Python</div>
+          </div>
+          <div class="cirle-align radialProgressBar progress-60">
+            <div class="overlay">SQL</div>
+          </div>
+          <div class="cirle-align radialProgressBar progress-60">
+            <div class="overlay">Django</div>
+          </div>
         </div>
-        <div class="cirle-align radialProgressBar progress-60">
-          <div class="overlay">CSS</div>
+        <div class="col-md-8">
+          <div class="text-title">
+            <h4>Education and Work Experience</h4>
+          </div>
+          <div class="timeline-item" data-dates="09/2007-06/2010">
+            <h4>Shanghai Publishing and Printing College</h4>
+            <p>Diploma in Publishing</p>
+          </div>
+          <div class="timeline-item" data-dates="09/2010-07/2011">
+            <h4>University of Central Lancashire</h4>
+            <p>BA(Hons)International Corporate Communication[2:1]</p>
+          </div>
+          <div class="timeline-item" data-dates="09/2011-06/2012">
+            <h4>University of Exeter</h4>
+            <p>MSc International Management</p>
+          </div>
+          <div class="timeline-item" data-dates="09/2012-05/2013">
+            <h4>volunteer in Chinese Overseas Christian Mission</h4>
+          </div>
+          <div class="timeline-item" data-dates="05/2013-10/2013">
+            <h4>Bego Ltd.(Start-up)</h4>
+            <p>Marketing Executive</p>
+          </div>
+          <div class="timeline-item" data-dates="01/2014-04/2014">
+            <h4>UVIC Ltd.</h4>
+            <p>Education Marketing Officer</p>
+          </div>
+          <div class="timeline-item" data-dates="04/2014-Present">
+            <h4>UKEduVision Ltd.</h4>
+            <p>Education Consultant</p>
+          </div>
         </div>
-        <div class="cirle-align radialProgressBar progress-60">
-          <div class="overlay">JS</div>
-        </div>
-        <div class="cirle-align radialProgressBar progress-60">
-          <div class="overlay">Python</div>
-        </div>
-        <div class="cirle-align radialProgressBar progress-60">
-          <div class="overlay">SQL</div>
-        </div>
-        <div class="cirle-align radialProgressBar progress-60">
-          <div class="overlay">Django</div>
-        </div>
-      </div>
-      <div class="col">
-        <div class="timeline-item" data-tates="09/2007-06/2010">
-          <h4>Shanghai Publishing and Printing College</h4>
-          <p>Diploma in Publishing</p>
-        </div>
-        <div class="timeline-item" data-tates="09/2010-07/2011">
-          <h4>University of Central Lancashire</h4>
-          <p>BA(Hons)International Corporate Communication[2:1]</p>
-        </div>
-        <div class="timeline-item" data-tates="09/2011-06/2012">
-          <h4>University of Exeter</h4>
-          <p>MSc International Management</p>
-        </div>
-        <div class="timeline-item" data-tates="09/2012-05/2013">
-          <h4>volunteer in Chinese Overseas Christian Mission</h4>
-        </div>
-        <div class="timeline-item" data-tates="05/2013-10/2013">
-          <h4>Bego Ltd.(Start-up)</h4>
-          <p>Marketing Executive</p>
-        </div>
-        <div class="timeline-item" data-tates="01/2014-04/2014">
-          <h4>UVIC Ltd.</h4>
-          <p>Education Marketing Officer</p>
-        </div>
-        <div class="timeline-item" data-tates="04/2014-Present">
-          <h4>UKEduVision Ltd.</h4>
-          <p>Education Consultant</p>
-        </div>
-      </div>
       </div>
     </section>
-    <! --***************************************** CONTACT *****************************************-->
-    <section id="contact" class="container-fluid bg-contact content-wrapper">
+    <!--***************************************** CONTACT *****************************************-->
+    <section id="contact" class="bg-contact contact-box">
       <div class="row">
-        <div class="col-md-8 contact-form transbox">
+        <div class="col-md-8 contact-form">
           <div>
             <h3 class="text-center contact-heading">Get in touch</h3>
             <div>
-              <form action="" method="">
+              <form>
                 <input
                   type="text"
                   name="name"
@@ -165,24 +168,23 @@
             </div>
           </div>
         </div>
-        <div class="col-md-4 transbox">
-          <p>
+        <div class="col col-md-4 contact-form">
+        <a href="#" target="_blank" class="cv-pdf">
+          <p id="download-text">
             Download My CV
-            <a href="#" target="_blank" class="cv-pdf">
               <i class="fa fa-arrow-circle-o-down" aria-hidden="true"></i>
-            </a>
           </p>
+          </a>
         </div>
-
       </div>
     </section>
-    <! --***************************************** FOOTER *****************************************-->
+    <!--***************************************** FOOTER *****************************************-->
     <footer class="container-fluid">
       <div class="row">
         <div class="col-sm-4">
           <p class="inline-block">2020 by Jing Xu All Rights Reserved</p>
         </div>
-        
+
         <div class="col-sm-4">
           <ul class="list-inline social-links">
             <li class="list-inline-item">
@@ -196,9 +198,9 @@
               </a>
             </li>
             <li class="list-inline-item">
-            <a href="https://www.youtube.com/" target="_blank">
-            <i class="fa fa-youtube-square" aria-hidden="true"></i>
-            </a>
+              <a href="https://www.youtube.com/" target="_blank">
+                <i class="fa fa-youtube-square" aria-hidden="true"></i>
+              </a>
             </li>
           </ul>
         </div>
