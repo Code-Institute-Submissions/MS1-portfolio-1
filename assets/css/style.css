@@ -12,14 +12,6 @@ body {
   height: 100vh;
 }
 
-.nav-container {
-  width: 100%;
-  height: 100%;
-  /* CSS Smooth Scroll */
-  overflow-y: scroll;
-  scroll-behavior: smooth;
-  scroll-snap-type: y mandatory;
-}
 /*------------------------------------------------------------------- Navbar --------------*/
 
 .menu {
@@ -35,7 +27,7 @@ body {
   z-index: 1000;
   display: flex;
   width: 100%;
-  height: 40px;
+  height: 3em;
 }
 
 .menu ul {
@@ -47,6 +39,7 @@ body {
 
 .menu ul li {
   display: inline;
+  padding: 5px;
 }
 
 .menu ul li a {
@@ -61,10 +54,6 @@ body {
   color: #40454b;
 }
 
-.active {
-  border-bottom: 1px solid #777777;
-}
-
 .content-wrapper {
   display: flex;
   flex-direction: column;
@@ -77,12 +66,6 @@ body {
 }
 
 #home {
-  position: relative;
-  z-index: 1;
-}
-
-#home::before {
-  content: "";
   position: absolute;
   top: 0;
   left: 0;
@@ -96,8 +79,6 @@ body {
   background-position: center;
   background-size: cover;
   border: none;
-  opacity: 0.7;
-  z-index: -1;
 }
 
 .profile-container {
@@ -162,7 +143,7 @@ text-paragraph {
   padding-right: 10px;
   padding-bottom: 10px;
 
-  background-color: #9da6aebe;
+  background-color: #677683be;
 
   transition: all 0.5s ease-in-out;
   -moz-transition: all 0.5s ease-in-out;
@@ -311,10 +292,10 @@ div.radialProgressBar .overlay {
   background-color: rgba(60, 60, 60, 0.6);
   max-width: 400px;
   position: relative;
- align-content: center;
+  align-content: center;
   padding: 30px;
   left: 20%;
-  bottom: 
+  bottom: ;
 }
 
 .contact-heading {
@@ -337,31 +318,6 @@ button[type="submit"] {
   margin-bottom: 20px;
   background-color: #9bbcb3;
   border-style: none;
-}
-
-#download-text {
-  font-size: 30px;
-  align-content: center;
-  color: #fafafa;
-}
-
-#download-text:hover {
-  color: #6db9d9;
-}
-
-.cv-pdf i {
-  font-size: 35px;
-  color: #fafafa;
-  text-align: center;
-  padding-left: 5px;
-  transition: all 0.35s ease-in-out;
-  -moz-transition: all 0.35s ease-in-out;
-  -webkit-transition: all 0.35s ease-in-out;
-  -o-transition: all 0.35s ease-in-out;
-}
-
-.cv-pdf i:hover {
-  color: #6db9d9;
 }
 
 /*------------------------------------------------------------------- Footer ---------------------*/
@@ -399,9 +355,34 @@ footer {
   background: #6db9d9;
 }
 
+#download-text {
+  font-size: 20px;
+  align-content: center;
+  color: #fafafa;
+  letter-spacing: normal;
+}
+
+#download-text:hover {
+  color: #6db9d9;
+}
+
+.cv-pdf i {
+  font-size: 25px;
+  color: #fafafa;
+  text-align: center;
+  padding-left: 5px;
+  transition: all 0.35s ease-in-out;
+  -moz-transition: all 0.35s ease-in-out;
+  -webkit-transition: all 0.35s ease-in-out;
+  -o-transition: all 0.35s ease-in-out;
+}
+
+.cv-pdf i:hover {
+  color: #6db9d9;
+}
 /*------------------------------------------------------------------- Media Queries --------------*/
 
-@media screen and (max-width: 1393px) {
+@media screen and (max-width: 759px) {
   #home {
     width: 50%;
     height: 1200px;
