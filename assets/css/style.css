@@ -6,10 +6,10 @@
   border: 0;
 }
 
-body {
+body{
   font-family: "Open Sans", sans-serif;
   color: #777777;
-  height: 100vh;
+
 }
 
 /*------------------------------------------------------------------- Navbar --------------*/
@@ -65,8 +65,8 @@ body {
   scroll-snap-align: center;
 }
 
+
 #home {
-  position: absolute;
   top: 0;
   left: 0;
   bottom: 0;
@@ -83,6 +83,7 @@ body {
 
 .profile-container {
   background-color: #aebeba;
+  margin: 0 auto;
 }
 
 .logo {
@@ -151,28 +152,11 @@ text-paragraph {
 }
 
 /*------------------------------------------------------------------- Skills --------------------*/
+
+
 .content-wrapper.bg-skills {
   position: relative;
   z-index: 1;
-}
-
-.content-wrapper.bg-skills::before {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 0;
-  bottom: 0;
-  right: 0;
-  width: 100%;
-  height: 100%;
-  margin: 0;
-  background-image: url("../../assets/images/bg-about.jpg");
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
-  border: none;
-  opacity: 0.3;
-  z-index: -1;
 }
 
 /*------------------------------------------------------------------- Progressbars --------------*/
@@ -265,6 +249,7 @@ div.radialProgressBar .overlay {
   z-index: 1;
   justify-content: center;
   display: block;
+  height: 100%;
 }
 
 .content-wrapper.bg-contact::before {
