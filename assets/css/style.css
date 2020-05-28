@@ -245,32 +245,17 @@ div.radialProgressBar .overlay {
 }
 /*------------------------------------------------------------------- Contact Form --------------*/
 
-.content-wrapper.bg-contact {
+.bg-contact {
   position: relative;
   z-index: 1;
   justify-content: center;
   display: block;
   height: 100%;
+  background-image: url("../../assets/images/bg-contact.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
 }
 
-.content-wrapper.bg-contact::before {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 0;
-  bottom: 0;
-  right: 0;
-  width: 100%;
-  height: 100%;
-  margin: 0;
-  background-image: url("../../assets/images/bg-contact.jpg");
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
-  border: none;
-  opacity: 0.4;
-  z-index: -1;
-}
 
 .contact-form {
   margin-top: 90px;
@@ -281,7 +266,7 @@ div.radialProgressBar .overlay {
   align-content: center;
   padding: 30px;
   left: 20%;
-  bottom: ;
+  bottom: 3em;
 }
 
 .contact-heading {
