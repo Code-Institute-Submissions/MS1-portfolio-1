@@ -20,7 +20,7 @@ body{
   font-weight: bold;
   list-style-type: none;
   letter-spacing: 4px;
-  line-height: 55px;
+  line-height: 45px;
   text-align: center;
   background-color: white;
   position: fixed;
@@ -157,6 +157,7 @@ text-paragraph {
 .content-wrapper.bg-skills {
   position: relative;
   z-index: 1;
+  background-image: url(../images/bg-about);
 }
 
 /*------------------------------------------------------------------- Progressbars --------------*/
@@ -220,7 +221,7 @@ div.radialProgressBar .overlay {
   content: attr(data-dates);
   position: absolute;
   left: 2.5em;
-  top: 3em;
+  top: 2em;
   display: block;
   font-size: 1em;
   padding: 0;

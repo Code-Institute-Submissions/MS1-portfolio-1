@@ -3,7 +3,7 @@
 ## Jing Xu Personal Portfolio
 In this project I mainly reviewed the knowledge and skills I learned in **HTML/CSS Fundamentals** and **User Centric Frontend Development**, I also referred to the **Love Running** and **Mini project of Rosie's resume**.
 
-
+I modified the website to use parallax scrolling which embraces the users with a lively touch.
 ## love running project
 ## https://jacobheflin.com/#about
 ## bootstrap
