@@ -10,11 +10,10 @@
       href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
       type="text/css"
     />
-    <link
-      rel="stylesheet"
-      href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
-      type="text/css"
-    />
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" type="text/css" />
+
+
+
     <link rel="stylesheet" href="assets/css/style.css" type="text/css" />
   </head>
 
@@ -35,19 +34,33 @@
         </nav>
     </header>
 
-    
-    <!--*****************************************PROFILE**********************************-->
 
-    <section id="home" class="profile-container content-wrapper">
-      <div class="logo">
-        <h2 id="name" class="profile-text">Jing Xu</h2>
-        <h4 class="profile-text">Full Stack Software Developer</h4>
-      </div>
-      <div id="profile-pic">
+    <section class="showcase">
+        <div class="video-container">
+          <video src="../assets/images/video.mp4" autoplay muted loop></video>
+        </div>
+        <div class="content" id="logo">
+          <h1 id="name" class="profile-text">Jing Xu</h1>
+          <h3 class="profile-text">Full Stack Software Developer</h3>
+          <div id="profile-pic">
         <div id="circle-container">
           <div id="circle-cover-bg"></div>
         </div>
       </div>
+        </div>
+        <a href="#home" class="click-down">
+        <div  class="arrow-down">
+        <span></span>
+        </div>
+        </a>
+
+      </section>
+
+    <!--*****************************************PROFILE**********************************-->
+
+    <section id="home" class="profile-container content-wrapper">
+     
+      
       <div id="profile-text" class="col-md-8 col-sm-3">
         <p>
           Short Bio- Full Stack Web Developer Lorem Ipsum is simply dummy text
@@ -173,7 +186,7 @@
           </div>
         </div>
         <div class="col col-md-4 contact-form">
-       
+
         </div>
       </div>
     </section>

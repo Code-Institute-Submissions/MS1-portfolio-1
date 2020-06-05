@@ -65,6 +65,55 @@ body{
   scroll-snap-align: center;
 }
 
+.showcase {
+  position: relative;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 0 20px;
+  color: white;
+}
+
+.content {
+  z-index: 10;
+}
+
+.video-container {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  background: url("media/cover.jpg") no-repeat center center/cover;
+}
+
+.video-container video {
+  min-height: 100%;
+  min-width: 100%;
+  object-fit: cover;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform:translate(-50%,-50%)
+}
+
+.video-container:after{
+  content: '';
+  position: absolute;
+  top:0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0,0,0,0.4);
+}
+
+.content {
+  z-index: 100;
+}
 
 #home {
   top: 0;
@@ -86,44 +135,12 @@ body{
   margin: 0 auto;
 }
 
-.logo {
+#logo {
   margin-top: 70px;
   padding: 10px;
   text-align: center;
   align-items: center;
   justify-content: center;
-}
-
-text-title {
-  letter-spacing: 2px;
-  text-align: center;
-  font-size: 700;
-}
-
-text-paragraph {
-  text-transform: uppercase;
-  letter-spacing: 3px;
-  color: #555555;
-  text-align: center;
-  padding-top: 10px;
-}
-
-#circle-container {
-  width: 280px;
-  height: 280px;
-  padding: 25px;
-  border-style: solid;
-  border-width: 1px;
-  border-radius: 50%;
-  margin: 0 auto;
-  margin-top: 15px;
-}
-
-#circle-cover-bg {
-  background: url("../../assets/images/profile-img-test.png") no-repeat center
-    center;
-  height: 100%;
-  border-radius: 50%;
 }
 
 #profile-text {
@@ -150,6 +167,63 @@ text-paragraph {
   -moz-transition: all 0.5s ease-in-out;
   -webkit-transition: all 0.5s ease-in-out;
 }
+
+.click-down{
+    position: absolute;
+    bottom: 5rem;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+
+
+.arrow-down{
+    width: 60px;
+    height: 60px;
+    transition: .5s;
+    float: left;
+    box-shadow: -2px 2px 0 rgba(255,255,255,.5);
+    cursor: pointer;
+    transform: rotate(-45deg);
+}
+
+
+
+text-title {
+  letter-spacing: 2px;
+  text-align: center;
+  font-size: 700;
+}
+
+text-paragraph {
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  color: #555555;
+  text-align: center;
+  padding-top: 10px;
+  overflow: hidden;
+  min-width: 300px;
+}
+
+#circle-container {
+  width: 280px;
+  height: 280px;
+  padding: 25px;
+  border-style: solid;
+  border-width: 1px;
+  border-radius: 50%;
+  margin: 0 auto;
+  margin-top: 15px;
+}
+
+#circle-cover-bg {
+  background: url("../../assets/images/profile-img-test.png") no-repeat center
+    center;
+  height: 100%;
+  border-radius: 50%;
+}
+
+
 
 /*------------------------------------------------------------------- Skills --------------------*/
 
