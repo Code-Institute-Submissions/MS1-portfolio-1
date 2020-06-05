@@ -168,6 +168,15 @@ body{
   -webkit-transition: all 0.5s ease-in-out;
 }
 
+.click-down{
+    position: absolute;
+    bottom: 5rem;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+
+
 .arrow-down{
     width: 60px;
     height: 60px;
@@ -177,6 +186,8 @@ body{
     cursor: pointer;
     transform: rotate(-45deg);
 }
+
+
 
 text-title {
   letter-spacing: 2px;
