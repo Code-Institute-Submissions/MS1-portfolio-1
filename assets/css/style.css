@@ -22,7 +22,7 @@ body{
   letter-spacing: 4px;
   line-height: 45px;
   text-align: center;
-  background-color: white;
+  background-color:;
   position: fixed;
   z-index: 1000;
   display: flex;
@@ -110,6 +110,7 @@ body{
   background: rgba(0,0,0,0.4);
 }
 
+
 #logo {
   margin-top: 70px;
   padding: 10px;
@@ -124,12 +125,17 @@ body{
   letter-spacing: normal;
   text-align: center;
 
-  margin:0 auto;
+ margin:0 auto;
 
   width: 800px;
   height: 250px;
 
-  padding: 40px 10px 40px 10px;
+  padding-top: 40px;
+  padding-left: 10px;
+  padding-right: 10px;
+  padding-bottom: 10px;
+
+  background-color: #677683be;
 
   transition: all 0.5s ease-in-out;
   -moz-transition: all 0.5s ease-in-out;
@@ -153,6 +159,7 @@ body{
   height: 100%;
   border-radius: 50%;
 }
+
 
 
 .click-down{
@@ -195,6 +202,7 @@ body{
   background-color: #aebeba;
   margin: 0 auto;
 }
+
 
 
 
