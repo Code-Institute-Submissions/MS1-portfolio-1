@@ -22,7 +22,7 @@ body{
   letter-spacing: 4px;
   line-height: 45px;
   text-align: center;
-  background-color: white;
+  background-color:;
   position: fixed;
   z-index: 1000;
   display: flex;
@@ -77,8 +77,8 @@ body{
   color: white;
 }
 
-.content {
-  z-index: 10;
+.content{
+    z-index: 100;
 }
 
 .video-container {
@@ -88,7 +88,6 @@ body{
   width: 100%;
   height: 100%;
   overflow: hidden;
-  background: url("media/cover.jpg") no-repeat center center/cover;
 }
 
 .video-container video {
@@ -111,9 +110,78 @@ body{
   background: rgba(0,0,0,0.4);
 }
 
-.content {
+
+#logo {
+  margin-top: 70px;
+  padding: 10px;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
   z-index: 100;
 }
+
+.profile-text {
+  font-size: 130%;
+  letter-spacing: normal;
+  text-align: center;
+
+ margin:0 auto;
+
+  width: 800px;
+  height: 250px;
+
+  padding-top: 40px;
+  padding-left: 10px;
+  padding-right: 10px;
+  padding-bottom: 10px;
+
+  background-color: #677683be;
+
+  transition: all 0.5s ease-in-out;
+  -moz-transition: all 0.5s ease-in-out;
+  -webkit-transition: all 0.5s ease-in-out;
+}
+
+#circle-container {
+  width: 240px;
+  height: 240px;
+  padding: 25px;
+  border-style: solid;
+  border-width: 1px;
+  border-radius: 50%;
+  margin: 0 auto;
+  margin-top: 15px;
+}
+
+#circle-cover-bg {
+  background: url("../../assets/images/profile-img-test.png") no-repeat center
+    center;
+  height: 100%;
+  border-radius: 50%;
+}
+
+
+
+.click-down{
+    position: absolute;
+    bottom: 5rem;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 1000;
+}
+
+.arrow-down{
+    width: 80px;
+    height: 80px;
+    transition: .5s;
+    float: left;
+    cursor: pointer;
+    transform: rotate(-45deg);
+    box-shadow: -2px 2px 0 rgba(255, 255, 255, .5);
+  
+    z-index: 1000;
+}
+
 
 #home {
   top: 0;
@@ -135,93 +203,12 @@ body{
   margin: 0 auto;
 }
 
-#logo {
-  margin-top: 70px;
-  padding: 10px;
-  text-align: center;
-  align-items: center;
-  justify-content: center;
-}
-
-#profile-text {
-  font-size: 130%;
-  letter-spacing: normal;
-  text-align: center;
-
-  margin-left: auto;
-  margin-right: auto;
-  margin-top: 50px;
-  margin-bottom: 20px;
-
-  width: 800px;
-  height: 250px;
-
-  padding-top: 40px;
-  padding-left: 10px;
-  padding-right: 10px;
-  padding-bottom: 10px;
-
-  background-color: #677683be;
-
-  transition: all 0.5s ease-in-out;
-  -moz-transition: all 0.5s ease-in-out;
-  -webkit-transition: all 0.5s ease-in-out;
-}
-
-.click-down{
-    position: absolute;
-    bottom: 5rem;
-    left: 50%;
-    transform: translateX(-50%);
-}
 
 
 
-.arrow-down{
-    width: 60px;
-    height: 60px;
-    transition: .5s;
-    float: left;
-    box-shadow: -2px 2px 0 rgba(255,255,255,.5);
-    cursor: pointer;
-    transform: rotate(-45deg);
-}
 
 
 
-text-title {
-  letter-spacing: 2px;
-  text-align: center;
-  font-size: 700;
-}
-
-text-paragraph {
-  text-transform: uppercase;
-  letter-spacing: 3px;
-  color: #555555;
-  text-align: center;
-  padding-top: 10px;
-  overflow: hidden;
-  min-width: 300px;
-}
-
-#circle-container {
-  width: 280px;
-  height: 280px;
-  padding: 25px;
-  border-style: solid;
-  border-width: 1px;
-  border-radius: 50%;
-  margin: 0 auto;
-  margin-top: 15px;
-}
-
-#circle-cover-bg {
-  background: url("../../assets/images/profile-img-test.png") no-repeat center
-    center;
-  height: 100%;
-  border-radius: 50%;
-}
 
 
 

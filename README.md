@@ -20,4 +20,4 @@ I modified the website to use parallax scrolling which embraces the users with a
 ### about Image by <a href="https://pixabay.com/users/LUM3N-1066559/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=1949192">LUM3N</a> from <a href="https://pixabay.com/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=1949192">Pixabay</a>
 
 
-westminster bridge photo by Dominika Gregušová from Pexels
+Video by <a href="https://pixabay.com/users/Loubens77-3874277/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=7529">Loubens77</a> from <a href="https://pixabay.com/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=7529">Pixabay</a>
