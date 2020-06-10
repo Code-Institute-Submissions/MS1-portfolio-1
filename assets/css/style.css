@@ -54,16 +54,6 @@ body{
   color: #40454b;
 }
 
-.content-wrapper {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  width: 100%;
-  padding-top: 5rem;
-  scroll-snap-align: center;
-}
-
 .showcase {
   position: relative;
   height: 100vh;
@@ -119,25 +109,7 @@ body{
   z-index: 100;
 }
 
-.profile-text {
-  font-size: 130%;
-  letter-spacing: normal;
-  text-align:justify;
 
- margin:0 auto;
-
-  width: 800px;
-  height: 250px;
-
-  padding-top: 30px;
-  padding-left: 10px;
-  padding-right: 10px;
-  padding-bottom: 30px;
-
-  transition: all 0.5s ease-in-out;
-  -moz-transition: all 0.5s ease-in-out;
-  -webkit-transition: all 0.5s ease-in-out;
-}
 
 #circle-container {
   width: 240px;
@@ -168,8 +140,8 @@ body{
 }
 
 .arrow-down{
-    width: 80px;
-    height: 80px;
+    width: 50px;
+    height: 50px;
     transition: .5s;
     float: left;
     cursor: pointer;
@@ -178,35 +150,57 @@ body{
   
     z-index: 1000;
 }
+/*------------------------------------------------------------------- Parallax --------------------*/
+.bg-about{
+background-image: url('../images/bg-about.jpg');
+min-height: 100%;
+widows: 100%;
+}
 
+.bg-experience{
+    background-image: url('../images/bg-contact.jpg');
+}
 
-.profile-container {
-  background-color: #aebeba;
-  margin: 0 auto;
+.bg-about, .bg-experience{
+    position: relative;
+    opacity: 0.70;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
 }
 
 
-/*------------------------------------------------------------------- Skills --------------------*/
-
-
-.content-wrapper.bg-skills {
-  position: relative;
-  z-index: 1;
-  background-image: url(../images/bg-about);
+/*------------------------------------------------------------------- About --------------------*/
+.bg-about{
+display: block;
 }
+
+.profile-text {
+  font-size: 130%;
+  letter-spacing: normal;
+  text-align:justify;
+  color: white;
+
+ margin:0 auto;
+
+  width: 800px;
+  height: 250px;
+
+  padding-top: 30px;
+  padding-left: 10px;
+  padding-right: 10px;
+  padding-bottom: 30px;
+
+  transition: all 0.5s ease-in-out;
+  -moz-transition: all 0.5s ease-in-out;
+  -webkit-transition: all 0.5s ease-in-out;
+}
+
 
 /*------------------------------------------------------------------- Progressbars --------------*/
-div.skills-container {
-  margin: 0 auto;
-  padding-left: 12px;
-  padding-right: 50px;
-  align-items: center;
-  justify-content: center;
-}
+section.skills-container {
 
-.cirle-align {
-  display: inline-table;
-  justify-content: right;
 }
 
 div.radialProgressBar {
