@@ -203,7 +203,7 @@ justify-content: space-around;
 align-items: center;
 flex-wrap: wrap;
 min-height: 150px;
-
+margin: 0 auto;
 }
 
 div.radialProgressBar {
