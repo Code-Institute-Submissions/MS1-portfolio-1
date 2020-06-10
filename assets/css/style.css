@@ -6,10 +6,10 @@
   border: 0;
 }
 
-body{
+html,body{
   font-family: "Open Sans", sans-serif;
   color: #777777;
-
+height: 100%;
 }
 
 /*------------------------------------------------------------------- Navbar --------------*/
@@ -153,8 +153,6 @@ body{
 /*------------------------------------------------------------------- Parallax --------------------*/
 .bg-about{
 background-image: url('../images/bg-about.jpg');
-min-height: 100%;
-widows: 100%;
 }
 
 .bg-experience{
@@ -199,7 +197,12 @@ display: block;
 
 
 /*------------------------------------------------------------------- Progressbars --------------*/
-section.skills-container {
+div.skills-container {
+display: flex;
+justify-content: space-around;
+align-items: center;
+flex-wrap: wrap;
+min-height: 150px;
 
 }
 
@@ -232,6 +235,16 @@ div.radialProgressBar .overlay {
     linear-gradient(54deg, #9bbcb9 50%, #ddd 50%);
 }
 /*------------------------------------------------------------------- Timeline --------------*/
+
+.bg-experience{
+    margin-top: 5rem;
+
+}
+
+.timeline{
+    margin: 0 auto;
+    padding: 40px;
+}
 
 .timeline-item {
   padding: 4em 2em 0em 2em;
@@ -325,7 +338,7 @@ button[type="submit"] {
 footer {
   background-color: #9bbcb3;
   color: #fafafa;
-  min-height: 120px;
+  min-height: 80px;
   margin: 0;
   text-align: center;
   padding-top: 20px;
@@ -383,7 +396,6 @@ footer {
 /*------------------------------------------------------------------- Media Queries --------------*/
 
 @media screen and (max-width: 1396px) {
- 
 
   (min-width: 992px) {
     .center-form {
