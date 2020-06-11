@@ -100,7 +100,7 @@ height: 100%;
 }
 
 
-#logo {
+.logo {
   margin-top: 70px;
   padding: 10px;
   text-align: center;
@@ -108,27 +108,6 @@ height: 100%;
   justify-content: center;
   z-index: 100;
 }
-
-
-
-#circle-container {
-  width: 240px;
-  height: 240px;
-  padding: 20px;
-  border-style: solid;
-  border-width: 1px;
-  border-radius: 50%;
-  margin: 0 auto;
-}
-
-#circle-cover-bg {
-  background: url("../../assets/images/profile-img-test.png") no-repeat center
-    center;
-  height: 100%;
-  border-radius: 50%;
-}
-
-
 
 .click-down{
     position: absolute;
@@ -160,7 +139,7 @@ background-image: url('../images/bg-about.jpg');
 
 .bg-about, .bg-experience{
     position: relative;
-    opacity: 0.70;
+    opacity: 0.9;
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
@@ -174,6 +153,28 @@ background-image: url('../images/bg-about.jpg');
 display: block;
 }
 
+#circle-container {
+  width: 240px;
+  height: 240px;
+  padding: 20px;
+  border-style: solid;
+  border-width: 1px;
+  border-radius: 50%;
+  margin: 0 auto;
+  z-index: 100;
+}
+
+#circle-cover-bg {
+  background: url("../../assets/images/profile-img-test.png") no-repeat center
+    center;
+  height: 100%;
+  border-radius: 50%;
+}
+
+.profile-pic{
+    padding-top: 180px;
+}
+
 .profile-text {
   font-size: 130%;
   letter-spacing: normal;
@@ -185,7 +186,7 @@ display: block;
   width: 800px;
   height: 250px;
 
-  padding-top: 30px;
+  padding-top: 150px;
   padding-left: 10px;
   padding-right: 10px;
   padding-bottom: 30px;
@@ -398,6 +399,13 @@ footer {
 @media screen and (max-width: 1396px) {
 
   (min-width: 992px) {
+
+.bg-about {
+    min-height: 150%;
+}
+
+
+
     .center-form {
       padding-top: 30px;
       min-height: 240px;
