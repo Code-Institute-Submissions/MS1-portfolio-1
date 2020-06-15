@@ -130,16 +130,16 @@ height: 100%;
 }
 /*------------------------------------------------------------------- Parallax --------------------*/
 .bg-about{
-background-image: url('../images/bg-about.jpg');
+background-image: url('../images/bg-img.jpg');
 }
 
 .bg-experience{
-    background-image: url('../images/bg-contact.jpg');
+    background-image: url('../images/bg-about.jpg');
 }
 
 .bg-about, .bg-experience{
     position: relative;
-    opacity: 0.9;
+    opacity: 0.95;
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
@@ -179,7 +179,7 @@ display: block;
   font-size: 130%;
   letter-spacing: normal;
   text-align:justify;
-  color: white;
+  color: #777777;
 
  margin:0 auto;
 
@@ -246,6 +246,10 @@ div.radialProgressBar .overlay {
 
 }
 
+.experience-title{
+color: #fff;
+}
+
 .timeline{
     margin: 0 auto;
     padding: 40px;
@@ -254,7 +258,7 @@ div.radialProgressBar .overlay {
 .timeline-item {
   padding: 4em 2em 0em 2em;
   position: relative;
-  color: #9bbcb3;
+  color: #fff;
   border-left: 1px solid;
 }
 
@@ -284,7 +288,7 @@ div.radialProgressBar .overlay {
   left: -6px;
   border-radius: 12px;
   content: "";
-  background: #9bbcb3;
+  background: #fff;
 }
 
 .history-items {
@@ -310,6 +314,7 @@ div.radialProgressBar .overlay {
   background-color: rgba(60, 60, 60, 0.6);
   position: relative;
   align-content: center;
+  max-width: 400px;
 }
 
 .contact-heading {

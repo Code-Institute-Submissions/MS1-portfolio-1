@@ -21,3 +21,9 @@ I modified the website to use parallax scrolling which embraces the users with a
 
 
 Video by <a href="https://pixabay.com/users/Loubens77-3874277/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=7529">Loubens77</a> from <a href="https://pixabay.com/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=7529">Pixabay</a>
+
+
+Video by <a href="https://pixabay.com/users/Coverr-Free-Footage-1281706/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=3188">Coverr-Free-Footage</a> from <a href="https://pixabay.com/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=3188">Pixabay</a>
+
+
+white wall Image by <a href="https://pixabay.com/users/BRRT-122519/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=769963">BRRT</a> from <a href="https://pixabay.com/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=769963">Pixabay</a>
