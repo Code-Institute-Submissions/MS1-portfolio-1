@@ -6,10 +6,10 @@
   border: 0;
 }
 
-body{
+html,body{
   font-family: "Open Sans", sans-serif;
   color: #777777;
-
+height: 100%;
 }
 
 /*------------------------------------------------------------------- Navbar --------------*/
@@ -52,16 +52,6 @@ body{
 .menu ul li a:hover {
   border-bottom: 1px solid #777777;
   color: #40454b;
-}
-
-.content-wrapper {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  width: 100%;
-  padding-top: 5rem;
-  scroll-snap-align: center;
 }
 
 .showcase {
@@ -110,7 +100,7 @@ body{
 }
 
 
-#logo {
+.logo {
   margin-top: 70px;
   padding: 10px;
   text-align: center;
@@ -118,46 +108,6 @@ body{
   justify-content: center;
   z-index: 100;
 }
-
-.profile-text {
-  font-size: 130%;
-  letter-spacing: normal;
-  text-align:justify;
-
- margin:0 auto;
-
-  width: 800px;
-  height: 250px;
-
-  padding-top: 30px;
-  padding-left: 10px;
-  padding-right: 10px;
-  padding-bottom: 30px;
-
-  transition: all 0.5s ease-in-out;
-  -moz-transition: all 0.5s ease-in-out;
-  -webkit-transition: all 0.5s ease-in-out;
-}
-
-#circle-container {
-  width: 240px;
-  height: 240px;
-  padding: 25px;
-  border-style: solid;
-  border-width: 1px;
-  border-radius: 50%;
-  margin: 0 auto;
-  margin-top: 15px;
-}
-
-#circle-cover-bg {
-  background: url("../../assets/images/profile-img-test.png") no-repeat center
-    center;
-  height: 100%;
-  border-radius: 50%;
-}
-
-
 
 .click-down{
     position: absolute;
@@ -168,8 +118,8 @@ body{
 }
 
 .arrow-down{
-    width: 80px;
-    height: 80px;
+    width: 50px;
+    height: 50px;
     transition: .5s;
     float: left;
     cursor: pointer;
@@ -178,35 +128,83 @@ body{
   
     z-index: 1000;
 }
+/*------------------------------------------------------------------- Parallax --------------------*/
+.bg-about{
+background-image: url('../images/bg-about.jpg');
+}
+
+.bg-experience{
+    background-image: url('../images/bg-contact.jpg');
+}
+
+.bg-about, .bg-experience{
+    position: relative;
+    opacity: 0.9;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    min-height: 100%;
+}
 
 
-.profile-container {
-  background-color: #aebeba;
+/*------------------------------------------------------------------- About --------------------*/
+.bg-about{
+display: block;
+}
+
+#circle-container {
+  width: 240px;
+  height: 240px;
+  padding: 20px;
+  border-style: solid;
+  border-width: 1px;
+  border-radius: 50%;
   margin: 0 auto;
+  z-index: 100;
 }
 
-
-/*------------------------------------------------------------------- Skills --------------------*/
-
-
-.content-wrapper.bg-skills {
-  position: relative;
-  z-index: 1;
-  background-image: url(../images/bg-about);
+#circle-cover-bg {
+  background: url("../../assets/images/profile-img-test.png") no-repeat center
+    center;
+  height: 100%;
+  border-radius: 50%;
 }
+
+.profile-pic{
+    padding-top: 180px;
+}
+
+.profile-text {
+  font-size: 130%;
+  letter-spacing: normal;
+  text-align:justify;
+  color: white;
+
+ margin:0 auto;
+
+  width: 800px;
+  height: 250px;
+
+  padding-top: 150px;
+  padding-left: 10px;
+  padding-right: 10px;
+  padding-bottom: 30px;
+
+  transition: all 0.5s ease-in-out;
+  -moz-transition: all 0.5s ease-in-out;
+  -webkit-transition: all 0.5s ease-in-out;
+}
+
 
 /*------------------------------------------------------------------- Progressbars --------------*/
 div.skills-container {
-  margin: 0 auto;
-  padding-left: 12px;
-  padding-right: 50px;
-  align-items: center;
-  justify-content: center;
-}
-
-.cirle-align {
-  display: inline-table;
-  justify-content: right;
+display: flex;
+justify-content: space-around;
+align-items: center;
+flex-wrap: wrap;
+min-height: 150px;
+margin: 0 auto;
 }
 
 div.radialProgressBar {
@@ -238,6 +236,16 @@ div.radialProgressBar .overlay {
     linear-gradient(54deg, #9bbcb9 50%, #ddd 50%);
 }
 /*------------------------------------------------------------------- Timeline --------------*/
+
+.bg-experience{
+    margin-top: 5rem;
+
+}
+
+.timeline{
+    margin: 0 auto;
+    padding: 40px;
+}
 
 .timeline-item {
   padding: 4em 2em 0em 2em;
@@ -331,7 +339,7 @@ button[type="submit"] {
 footer {
   background-color: #9bbcb3;
   color: #fafafa;
-  min-height: 120px;
+  min-height: 80px;
   margin: 0;
   text-align: center;
   padding-top: 20px;
@@ -389,9 +397,15 @@ footer {
 /*------------------------------------------------------------------- Media Queries --------------*/
 
 @media screen and (max-width: 1396px) {
- 
 
   (min-width: 992px) {
+
+.bg-about {
+    min-height: 150%;
+}
+
+
+
     .center-form {
       padding-top: 30px;
       min-height: 240px;

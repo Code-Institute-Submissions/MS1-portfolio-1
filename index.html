@@ -10,9 +10,12 @@
       href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
       type="text/css"
     />
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous" />
-
-
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.6.3/css/all.css"
+      integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/"
+      crossorigin="anonymous"
+    />
 
     <link rel="stylesheet" href="assets/css/style.css" type="text/css" />
   </head>
@@ -38,26 +41,27 @@
       <div class="video-container">
         <video src="../assets/images/video.mp4" autoplay muted loop></video>
       </div>
-      <div class="content" id="logo">
+      <div class="content logo">
         <h3 id="name">Jing Xu</h3>
         <h3>Full Stack Software Developer</h3>
-        <div id="profile-pic">
-          <div id="circle-container">
-            <div id="circle-cover-bg"></div>
-          </div>
-        </div>
       </div>
       <a href="#about" class="click-down">
         <div class="arrow-down">
-        <span></span>
+          <span></span>
         </div>
       </a>
     </section>
 
-    <!--*****************************************PROFILE**********************************-->
+    <!--***************************************** About **********************************-->
 
-    <section id="about" class="skills bg-skills content-wrapper">
-      <div class="col-md-8 col-sm-3 profile-text">
+    <div id="about" class="bg-about">
+     <div class="profile-pic">
+        <div id="circle-container">
+          <div id="circle-cover-bg"></div>
+        </div>
+      </div>
+      <div class="row">
+      <div class="col-lg-8 col-md-8 col-sm-8 col-8 profile-text">
         <p>
           Short Bio- Full Stack Web Developer Lorem Ipsum is simply dummy text
           of the printing and typesetting industry. Lorem Ipsum has been the
@@ -67,68 +71,80 @@
           electronic typesetting,
         </p>
       </div>
-      <div class="row">
-        <!--*****************************************PROGRESS BAR**********************************-->
-        <div class="col-md-4 skills-container">
-          <div>
-            <h4>Skills</h4>
-          </div>
-          <div class="cirle-align radialProgressBar progress-60">
-            <div class="overlay">HTML</div>
-          </div>
-          <div class="cirle-align radialProgressBar progress-60">
-            <div class="overlay">CSS</div>
-          </div>
-          <div class="cirle-align radialProgressBar progress-60">
-            <div class="overlay">JS</div>
-          </div>
-          <div class="cirle-align radialProgressBar progress-60">
-            <div class="overlay">Python</div>
-          </div>
-          <div class="cirle-align radialProgressBar progress-60">
-            <div class="overlay">SQL</div>
-          </div>
-          <div class="cirle-align radialProgressBar progress-60">
-            <div class="overlay">Django</div>
+     </div>
+    </div>
+
+    <!--***************************************** PROGRESS BAR **********************************-->
+    <section id="skills" class="bg-blank">
+      <div class="container">
+        <div class="row">
+          <div class="col-sm-4 logo text-uppercase">
+            <h3>Skills</h3>
           </div>
         </div>
-        <div class="col-md-8">
-          <div class="text-title">
-            <h4 class="text-title">Education and Work Experience</h4>
-          </div>
-          <div class="timeline-item" data-dates="09/2007-06/2010">
-            <h4>Shanghai Publishing and Printing College</h4>
-            <p>Diploma in Publishing</p>
-          </div>
-          <div class="timeline-item" data-dates="09/2010-07/2011">
-            <h4>University of Central Lancashire</h4>
-            <p>BA(Hons)International Corporate Communication[2:1]</p>
-          </div>
-          <div class="timeline-item" data-dates="09/2011-06/2012">
-            <h4>University of Exeter</h4>
-            <p>MSc International Management</p>
-          </div>
-          <div class="timeline-item" data-dates="09/2012-05/2013">
-            <h4>Chinese Overseas Christian Mission</h4>
-            <p>Volunteer</p>
-          </div>
-          <div class="timeline-item" data-dates="05/2013-10/2013">
-            <h4>Bego Ltd.(Start-up)</h4>
-            <p>Marketing Executive</p>
-          </div>
-          <div class="timeline-item" data-dates="01/2014-04/2014">
-            <h4>UVIC Ltd.</h4>
-            <p>Education Marketing Officer</p>
-          </div>
-          <div class="timeline-item" data-dates="04/2014-Present">
-            <h4>UKEduVision Ltd.</h4>
-            <p>Education Consultant</p>
+        <div class="row">
+          <div class="col-xl-10 col-lg-7 col-md-8 skills-container">
+            <div class="cirle-align radialProgressBar progress-60">
+              <div class="overlay">HTML</div>
+            </div>
+            <div class="cirle-align radialProgressBar progress-60">
+              <div class="overlay">CSS</div>
+            </div>
+            <div class="cirle-align radialProgressBar progress-60">
+              <div class="overlay">JS</div>
+            </div>
+            <div class="cirle-align radialProgressBar progress-60">
+              <div class="overlay">Python</div>
+            </div>
+            <div class="cirle-align radialProgressBar progress-60">
+              <div class="overlay">SQL</div>
+            </div>
+            <div class="cirle-align radialProgressBar progress-60">
+              <div class="overlay">Django</div>
+            </div>
           </div>
         </div>
       </div>
     </section>
+    <!--***************************************** TIMELINE **********************************-->
+    <div class="bg-experience">
+      <div class="col-md-8 timeline">
+        <div class="text-title">
+          <h4 class="text-title">Education and Work Experience</h4>
+        </div>
+        <div class="timeline-item" data-dates="09/2007-06/2010">
+          <h4>Shanghai Publishing and Printing College</h4>
+          <p>Diploma in Publishing</p>
+        </div>
+        <div class="timeline-item" data-dates="09/2010-07/2011">
+          <h4>University of Central Lancashire</h4>
+          <p>BA(Hons)International Corporate Communication[2:1]</p>
+        </div>
+        <div class="timeline-item" data-dates="09/2011-06/2012">
+          <h4>University of Exeter</h4>
+          <p>MSc International Management</p>
+        </div>
+        <div class="timeline-item" data-dates="09/2012-05/2013">
+          <h4>Chinese Overseas Christian Mission</h4>
+          <p>Volunteer</p>
+        </div>
+        <div class="timeline-item" data-dates="05/2013-10/2013">
+          <h4>Bego Ltd.(Start-up)</h4>
+          <p>Marketing Executive</p>
+        </div>
+        <div class="timeline-item" data-dates="01/2014-04/2014">
+          <h4>UVIC Ltd.</h4>
+          <p>Education Marketing Officer</p>
+        </div>
+        <div class="timeline-item" data-dates="04/2014-Present">
+          <h4>UKEduVision Ltd.</h4>
+          <p>Education Consultant</p>
+        </div>
+      </div>
+    </div>
+
     <!--***************************************** CONTACT *****************************************-->
-    <section id="contact" class="bg-contact contact-box">
+    <section id="contact" class="bg-contact contact-box bg-blank">
       <div class="row">
         <div class="col-md-8 contact-form">
           <div>
@@ -211,7 +227,7 @@
           <a href="#" target="_blank" class="cv-pdf">
             <p id="download-text">
               Download My CV
-              <i class="fas fa-file-download" aria-hidden="true"></i> 
+              <i class="fas fa-file-download" aria-hidden="true"></i>
             </p>
           </a>
         </div>
