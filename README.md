@@ -1,9 +1,13 @@
 
 #First Milestone Project by Jing Xu
-## Jing Xu Personal Portfolio
-In this project I mainly reviewed the knowledge and skills I learned in **HTML/CSS Fundamentals** and **User Centric Frontend Development**, I also referred to the **Love Running** and **Mini project of Rosie's resume**.
+## Jing Xu Personal Portfolio Website
+This Milestone project aims to review and deepen the knowledge and skills I learned in **HTML/CSS Fundamentals** and **User Centric Frontend Development**. 
+
+I utilised free resource online and targeted to finish this project ASAP in order to proceed to the study of JavaScript.
 
 I modified the website to use parallax scrolling which embraces the users with a lively touch.
+
+
 ## love running project
 ## https://jacobheflin.com/#about
 ## bootstrap
