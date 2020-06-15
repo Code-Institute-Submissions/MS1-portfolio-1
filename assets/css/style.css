@@ -200,6 +200,7 @@ display: block;
 /*------------------------------------------------------------------- Progressbars --------------*/
 #skills-heading{
     padding: 50px;
+    color: #9bbcb3;
 }
 
 div.skills-container {
@@ -246,8 +247,9 @@ div.radialProgressBar .overlay {
 
 }
 
-.experience-title{
+#experience-heading{
 color: #fff;
+padding: 30px;
 }
 
 .timeline{
