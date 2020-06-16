@@ -18,7 +18,7 @@ height: 100%;
 .menu {
   font-size: 120%;
   color: #9bbcb3;
-  font-weight: bold;
+  font-weight: normal;
   list-style-type: none;
   letter-spacing: 4px;
   line-height: 45px;
@@ -424,15 +424,16 @@ footer {
 @media screen and (max-width:576px) {
 
 .bg-about {
-    min-height: 150%;
+    min-height: 160%;
 }
+
 
 }
 
 @media screen and (max-width:376px) {
 
 .bg-about {
-    min-height: 180%;
+    min-height: 200%;
 }
 
 }
