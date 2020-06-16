@@ -6,16 +6,24 @@
 ------------------------------------
 ## Jing Xu Personal Portfolio Website
 This project aims to:
-* review and deepen the knowledge and skills I learned in **HTML/CSS Fundamentals** and **User Centric Frontend Development**, 
-* explored a practice to demonstrate my CV for future employers/co-workers.
+* review and deepen the knowledge and skills I learned in **HTML/CSS Fundamentals** and **User Centric Frontend Development**
+* explored a practice to  demonstrate my knowledge and skills for future employers/co-workers
+* involve simplism and aesthetics for users' comfort as much as I can
 
 
 ------------------------------------
 ## User Experience (UX)
 ------------------------------------
 
+Researched some of the best practice of personal portfolio websites of 2019, I realised that minimal design and bold visual impact are still the mainstream. These two characteristics shall encourage and welcome the users to explore the information I would like to demonstrate.
 
-* User stories
+### User stories
+
+* As a user, I expect the the information to be well organised and easily navigated, so that I don't have to waste time getting confused; 
+* As a user, I want to know the skillset of this developer, so that I can decide whether she is capable for my role/project;
+* As a user, I want to know the experience of this developer, so that I can see her passion and interest as well as her potential;
+
+
 
 
 
