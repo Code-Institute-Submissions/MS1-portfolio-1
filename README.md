@@ -1,19 +1,36 @@
 
-#First Milestone Project by Jing Xu
+# Milestone Project One by Jing Xu
+
+![Image of Jing's website](assets/images/profile-img-test.png)
+
+------------------------------------
 ## Jing Xu Personal Portfolio Website
-This Milestone project aims to review and deepen the knowledge and skills I learned in **HTML/CSS Fundamentals** and **User Centric Frontend Development**. 
+This project aims to:
+* review and deepen the knowledge and skills I learned in **HTML/CSS Fundamentals** and **User Centric Frontend Development**, 
+* explored a practice to demonstrate my CV for future employers/co-workers.
 
-I utilised free resource online and targeted to finish this project ASAP in order to proceed to the study of JavaScript.
 
+------------------------------------
+## User Experience (UX)
+------------------------------------
+
+
+* User stories
+
+
+
+
+
+------------------------------------
 I modified the website to use parallax scrolling which embraces the users with a lively touch.
 
 
-## love running project
-## https://jacobheflin.com/#about
-## bootstrap
-## W3schools.com
-## Traversy Media youtube tutorial
-##hover.css
+ love running project
+ https://jacobheflin.com/#about
+ bootstrap
+ W3schools.com
+ Traversy Media youtube tutorial
+ hover.css
 
 
 
