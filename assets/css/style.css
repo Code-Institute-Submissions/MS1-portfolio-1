@@ -13,46 +13,20 @@ html,body{
 height: 100%;
 }
 
+.text-custom-color{
+color: #9bbcb9;
+}
 /*------------------------------------------------------------------- Navbar --------------*/
 
-.menu {
-  font-size: 120%;
-  color: #9bbcb3;
-  font-weight: normal;
-  list-style-type: none;
-  letter-spacing: 4px;
-  line-height: 45px;
-  text-align: center;
-  background-color:#fff;
+.menu-wrapper{
+    justify-content: center;
+}
+
+.sticky {
   position: fixed;
-  z-index: 1000;
-  display: flex;
+  top: 0;
   width: 100%;
-  height: 3em;
-}
-
-.menu ul {
-  display: flex;
-  list-style: none;
-  width: 100%;
-  justify-content: center;
-}
-
-.menu ul li {
-  display: inline;
-  padding: 5px;
-}
-
-.menu ul li a {
-  text-decoration: none;
-  color: inherit;
-  display: inline-block;
-  padding: 5px;
-}
-
-.menu ul li a:hover {
-  border-bottom: 1px solid #777777;
-  color: #40454b;
+  z-index: 200;
 }
 
 .showcase {
@@ -140,7 +114,6 @@ background-image: url('../images/bg-img.jpg');
 
 .bg-about, .bg-experience{
     position: relative;
-    opacity: 0.95;
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
@@ -186,11 +159,6 @@ display: block;
 
   width: 800px;
   height: 250px;
-
-  padding-top: 150px;
-  padding-left: 10px;
-  padding-right: 10px;
-  padding-bottom: 30px;
 
   transition: all 0.5s ease-in-out;
   -moz-transition: all 0.5s ease-in-out;
@@ -407,6 +375,7 @@ footer {
 
 @media screen and (max-width: 1396px) {
 
+/**
   (min-width: 992px) {
 
 
@@ -418,8 +387,11 @@ footer {
       max-width: 50%;
       margin: 0 auto;
     }
+    
   }
+**/
 }
+
 
 @media screen and (max-width:576px) {
 
@@ -436,4 +408,14 @@ footer {
     min-height: 200%;
 }
 
+.bg-about, .bg-experience{
+    position: relative;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: normal;
+    min-height: 100%;
 }
+
+}
+
