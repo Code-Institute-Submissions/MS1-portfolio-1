@@ -16,6 +16,10 @@ height: 100%;
 .text-custom-color{
 color: #9bbcb9;
 }
+
+.navbar-light .navbar-nav .nav-link {
+    color: #9bbcb9;
+}
 /*------------------------------------------------------------------- Navbar --------------*/
 
 .menu-wrapper{
@@ -406,15 +410,6 @@ footer {
 
 .bg-about {
     min-height: 200%;
-}
-
-.bg-about, .bg-experience{
-    position: relative;
-    background-position: center;
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-attachment: normal;
-    min-height: 100%;
 }
 
 }
