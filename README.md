@@ -1,7 +1,7 @@
 
 # Milestone Project One by Jing Xu
 
-![Image of Jing's website](assets/images/profile-img-test.png)
+![Image of Jing's website](assets/images/mockup.png)
 
 ------------------------------------
 ## Jing Xu Personal Portfolio Website
@@ -34,7 +34,7 @@ Researched some of the best practice of personal portfolio websites of 2019, I r
 
 ## Features
 
-* Responsive on all device sizes
+* Responsive on different device sizes
 * Parallax scrolling
 * Video background
 
