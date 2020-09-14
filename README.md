@@ -39,11 +39,11 @@ Researched some of the best practice of personal portfolio websites of 2019, I r
 * Video background
 
 ## Technologies Used
-### Languages Used
+#### Languages Used
 * HTML5
 * CSS3
 
-### Frameworks, Libraries & Programs Used
+#### Frameworks, Libraries & Programs Used
 1. Bootstrap 5.7 was used throughout the project for styling and responsiveness.
 1. Google Fonts were used to import the font into the style.css
 1. Font Awesome was used to add icons in the footer.
@@ -69,6 +69,7 @@ The W3C Markup Validator and W3C CSS Validator Services were used to validate ev
 ### Known Bugs
 
 ## Deployment
+Since my website was written with Gitpod and stored on GitHub, it is deployed through GitHub Page
 
 ## Credits
 
