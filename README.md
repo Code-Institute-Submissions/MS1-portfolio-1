@@ -7,8 +7,8 @@
 ## Jing Xu Personal Portfolio Website
 This project aims to:
 * review and deepen the knowledge and skills I learned in **HTML/CSS Fundamentals** and **User Centric Frontend Development**
-* explored a practice to  demonstrate my knowledge and skills for future employers/co-workers
-* involve simplism and aesthetics for users' comfort as much as I can
+* explore a practice to present my knowledge and skills to future employers/co-workers
+* explore simplism and aesthetics for users' comfort as much as I can
 
 
 ------------------------------------
