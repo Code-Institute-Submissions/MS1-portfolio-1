@@ -35,6 +35,8 @@ body {
   z-index: 200;
 }
 
+/*------------------------------------------------------------------- Video Background --------------*/
+
 .showcase {
   position: relative;
   height: 100vh;
@@ -144,8 +146,7 @@ body {
 }
 
 #circle-cover-bg {
-  background: url("../../assets/images/profile-img-test.png") no-repeat center
-    center;
+  background: url("../../assets/images/profile.png") no-repeat center center;
   height: 100%;
   border-radius: 50%;
 }
@@ -276,7 +277,7 @@ div.radialProgressBar .overlay {
   justify-content: center;
   display: block;
   height: 100%;
- background-size: cover;
+  background-size: cover;
   background-image: url("../../assets/images/bg-contact.jpg");
   background-position: center;
   background-repeat: no-repeat;
