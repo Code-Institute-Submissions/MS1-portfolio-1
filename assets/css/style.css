@@ -17,10 +17,12 @@ height: 100%;
 color: #9bbcb9;
 }
 
-.navbar-light .navbar-nav .nav-link {
-    color: #9bbcb9;
-}
 /*------------------------------------------------------------------- Navbar --------------*/
+
+.navbar-light .navbar-nav .nav-link {
+    color:  #8bbcb9;
+    font-size: 1.2em;
+}
 
 .menu-wrapper{
     justify-content: center;
@@ -113,7 +115,7 @@ background-image: url('../images/bg-img.jpg');
 }
 
 .bg-experience{
-    background-image: url('../images/bg-about.jpg');
+    background-image: url('../images/bg-timeline.jpg');
 }
 
 .bg-about, .bg-experience{
@@ -221,7 +223,6 @@ div.radialProgressBar .overlay {
 }
 
 #experience-heading{
-color: #fff;
 padding: 30px;
 margin: 50px auto;
 }
@@ -234,7 +235,7 @@ margin: 50px auto;
 .timeline-item {
   padding: 4em 2em 0em 2em;
   position: relative;
-  color: #fff;
+  color: #9bbcb9;
   border-left: 1px solid;
 }
 
@@ -264,7 +265,7 @@ margin: 50px auto;
   left: -6px;
   border-radius: 12px;
   content: "";
-  background: #fff;
+  background: #9bbcb9;
 }
 
 .history-items {
