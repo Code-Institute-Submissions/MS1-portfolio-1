@@ -79,7 +79,8 @@ Since my website was written with Gitpod and stored on GitHub, it is deployed th
 * Rosie mini project
 
 ### Media
-* contact bg img Image by <a href="https://pixabay.com/users/geralt-9301/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=2944064">Gerd Altmann</a> from <a href="https://pixabay.com/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=2944064">Pixabay</a>
+* bg-experience Photo by Indonesia Bertauhid on Unsplash
+* bg-contact Photo by Georgie Cobbs on Unsplash
 * bg-img by 
 * bg-about.jpg Image by <a href="https://pixabay.com/photos/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=1149815">Free-Photos</a> from <a href="https://pixabay.com/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=1149815">Pixabay</a>
 * Video by <a href="https://pixabay.com/users/Coverr-Free-Footage-1281706/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=3188">Coverr-Free-Footage</a> from <a href="https://pixabay.com/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=3188">Pixabay</a>
